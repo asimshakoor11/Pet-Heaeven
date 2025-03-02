@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/font/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Poppins";
+}
+
+.paddingleftright {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.section {
+  padding: 80px 4%;
+}

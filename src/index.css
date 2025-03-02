@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "Poppins", "serif";
+  --font-BeausiteGrandTrial: "BeausiteGrandTrial";
+  --breakpoint-lgcusotm: 992px;
+  --breakpoint-xlcusotm: 1200px;
+  --color-primarycolor: #2563eb;
+  --color-primarycolorhover: #1d4ed8;
+  --color-secondrycolor: #B8D576;
+  --color-secondrycolorhover: #004131;
+  --color-beigshade: #FFEFC8;
+  --color-goldshade: #ccad7b;
+}

@@ -1,0 +1,112 @@
+[
+    {
+      "id": 1,
+      "name": "Buddy",
+      "breed": "Golden Retriever",
+      "age": "2 years",
+      "size": "Large",
+      "healthCondition": "Healthy",
+      "adoptionStatus": "Available",
+      "image": "/images/image1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Whiskers",
+      "breed": "Domestic Shorthair",
+      "age": "1 year",
+      "size": "Small",
+      "healthCondition": "Healthy",
+      "adoptionStatus": "Available",
+      "image": "/images/image2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Max",
+      "breed": "German Shepherd",
+      "age": "3 years",
+      "size": "Large",
+      "healthCondition": "Needs Medication",
+      "adoptionStatus": "Available",
+      "image": "/images/image3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Luna",
+      "breed": "Siamese",
+      "age": "6 months",
+      "size": "Small",
+      "healthCondition": "Healthy",
+      "adoptionStatus": "Available",
+      "image": "/images/image4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Charlie",
+      "breed": "Labrador Retriever",
+      "age": "4 years",
+      "size": "Large",
+      "healthCondition": "Healthy",
+      "adoptionStatus": "Available",
+      "image": "/images/image5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Milo",
+      "breed": "Beagle",
+      "age": "2 years",
+      "size": "Medium",
+      "healthCondition": "Healthy",
+      "adoptionStatus": "Available",
+      "image": "/images/image6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Bella",
+      "breed": "Bulldog",
+      "age": "5 years",
+      "size": "Medium",
+      "healthCondition": "Needs Special Care",
+      "adoptionStatus": "Available",
+      "image": "/images/image7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Daisy",
+      "breed": "Poodle",
+      "age": "3 years",
+      "size": "Medium",
+      "healthCondition": "Healthy",
+      "adoptionStatus": "Available",
+      "image": "/images/image8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Rocky",
+      "breed": "Boxer",
+      "age": "2 years",
+      "size": "Large",
+      "healthCondition": "Healthy",
+      "adoptionStatus": "Available",
+      "image": "/images/image9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Lola",
+      "breed": "Chihuahua",
+      "age": "1 year",
+      "size": "Small",
+      "healthCondition": "Healthy",
+      "adoptionStatus": "Available",
+      "image": "/images/image10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Oscar",
+      "breed": "Maine Coon",
+      "age": "2 years",
+      "size": "Large",
+      "healthCondition": "Healthy",
+      "adoptionStatus": "Available",
+      "image": "/images/image11.jpg"
+    }
+  ]
