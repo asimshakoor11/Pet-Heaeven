@@ -4,17 +4,15 @@ import { Link } from 'react-router';
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Hero Section */}
+
       <div
         className="relative section h-screen grid items-center bg-cover bg-center"
         style={{
-          backgroundImage: `url('/images/heroimage1.jpg')`, // Replace with your image URL
+          backgroundImage: `url('/images/heroimage1.jpg')`, 
         }}
       >
-        {/* Overlay to darken the background image */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
-        {/* Content */}
         <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4 text-white">Welcome to Pet Heaven Society</h1>
           <p className="text-xl mb-8 text-white">
@@ -45,7 +43,6 @@ const HomePage = () => {
       <div className="bg-blue-50 section">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Mission Statement */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold mb-4 text-blue-600">Our Mission</h3>
               <p className="text-gray-700">
@@ -53,7 +50,6 @@ const HomePage = () => {
               </p>
             </div>
 
-            {/* Vision Statement */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold mb-4 text-blue-600">Our Vision</h3>
               <p className="text-gray-700">
@@ -68,10 +64,9 @@ const HomePage = () => {
       <div className="section bg-white">
         <h2 className="text-3xl font-bold mb-8 text-center">Meet Our Pets</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {/* Pet Image 1 */}
           <div className="overflow-hidden rounded-lg shadow-lg">
             <img
-              src="/images/image1.jpg" // Replace with your image URL
+              src="/images/image1.jpg" 
               alt="Happy Dog"
               className="w-full h-48 object-cover"
             />
@@ -81,10 +76,9 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Pet Image 2 */}
           <div className="overflow-hidden rounded-lg shadow-lg">
             <img
-              src="/images/image2.jpg" // Replace with your image URL
+              src="/images/image2.jpg" 
               alt="Curious Cat"
               className="w-full h-48 object-cover"
             />
@@ -94,10 +88,9 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Pet Image 3 */}
           <div className="overflow-hidden rounded-lg shadow-lg">
             <img
-              src="/images/image3.jpg" // Replace with your image URL
+              src="/images/image3.jpg" 
               alt="Playful Puppy"
               className="w-full h-48 object-cover"
             />
@@ -107,10 +100,9 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Pet Image 4 */}
           <div className="overflow-hidden rounded-lg shadow-lg">
             <img
-              src="/images/image4.jpg" // Replace with your image URL
+              src="/images/image4.jpg" 
               alt="Adorable Kitten"
               className="w-full h-48 object-cover"
             />

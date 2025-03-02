@@ -5,9 +5,7 @@ import { Link } from 'react-router';
 const Footer = () => {
     return (
         <footer className="bg-primarycolor text-white section">
-            {/* Footer Content */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {/* Contact Details */}
                 <div>
                     <h3 className="text-xl font-bold mb-4">Contact Us</h3>
                     <p className="text-gray-100">Email: info@example.com</p>
@@ -15,7 +13,6 @@ const Footer = () => {
                     <p className="text-gray-100">Address: 123 Pet Street, City, Country</p>
                 </div>
 
-                {/* Quick Links */}
                 <div>
                     <h3 className="text-xl font-bold mb-4">Quick Links</h3>
                     <ul className="text-gray-100">
@@ -29,7 +26,6 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                 {/* Social Media Links */}
                  <div>
                     <h3 className="text-xl font-bold mb-4">Follow Us</h3>
                     <div className="flex space-x-4">
@@ -70,7 +66,6 @@ const Footer = () => {
                 
             </div>
 
-            {/* Copyright Information */}
             <div className="border-t border-gray-700 mt-8 pt-8 text-center">
                 <p className="text-gray-100">
                     &copy; {new Date().getFullYear()} MyPetAdoption. All rights reserved.

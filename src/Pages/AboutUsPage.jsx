@@ -3,18 +3,14 @@ import React from 'react';
 const AboutUsPage = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Hero Section */}
-
       <div
         className="relative section h-screen grid items-center bg-cover bg-center"
         style={{
           backgroundImage: `url('/images/heroimage2.jpg')`, // Replace with your image URL
         }}
       >
-        {/* Overlay to darken the background image */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
-        {/* Content */}
         <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4 text-white">About Us</h1>
           <p className="text-xl mb-8 text-white">
@@ -23,7 +19,6 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      {/* Information About the Charity */}
       <div className="section">
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-4">Our Charity</h2>
@@ -33,11 +28,9 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      {/* History, Values, and Team Section */}
       <div className="bg-blue-50 section">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* History */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold mb-4 text-blue-600">Our History</h3>
               <p className="text-gray-700">
@@ -45,7 +38,6 @@ const AboutUsPage = () => {
               </p>
             </div>
 
-            {/* Values */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold mb-4 text-blue-600">Our Values</h3>
               <p className="text-gray-700">
@@ -53,7 +45,6 @@ const AboutUsPage = () => {
               </p>
             </div>
 
-            {/* Team */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold mb-4 text-blue-600">Our Team</h3>
               <p className="text-gray-700">
@@ -64,7 +55,6 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      {/* Contact Details and Location Section */}
       <div className="section">
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
@@ -73,7 +63,6 @@ const AboutUsPage = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Contact Details */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-4 text-blue-600">Contact Details</h3>
             <p className="text-gray-700 mb-4">
@@ -87,7 +76,6 @@ const AboutUsPage = () => {
             </p>
           </div>
 
-          {/* Location Map */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-4 text-blue-600">Our Location</h3>
             <div className="overflow-hidden rounded-lg">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const RegisterPage = () => {
-    // State for form fields
+
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -9,7 +9,6 @@ const RegisterPage = () => {
         membershipType: '',
     });
 
-    // Handle form input changes
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -22,26 +21,20 @@ const RegisterPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Create a new registration object
         const newRegistration = {
-            id: new Date().getTime(), // Unique ID based on timestamp
+            id: new Date().getTime(),
             ...formData,
-            submissionDate: new Date().toLocaleString(), // Add submission date
+            submissionDate: new Date().toLocaleString(), 
         };
 
-        // Get existing registrations from localStorage
         const existingRegistrations = JSON.parse(localStorage.getItem('registrations')) || [];
 
-        // Add the new registration to the array
         const updatedRegistrations = [...existingRegistrations, newRegistration];
 
-        // Save the updated array back to localStorage
         localStorage.setItem('registrations', JSON.stringify(updatedRegistrations));
 
-        // Show success message
         alert('Thank you! Your registration has been submitted.');
 
-        // Reset form
         setFormData({
             fullName: '',
             email: '',
@@ -52,17 +45,15 @@ const RegisterPage = () => {
 
     return (
         <div className="min-h-screen bg-gray-100">
-            {/* Hero Section */}
+
             <div
                 className="relative section h-screen grid items-center bg-cover bg-center"
                 style={{
                     backgroundImage: `url('/images/heroimage6.jpg')`, // Replace with your image URL
                 }}
             >
-                {/* Overlay to darken the background image */}
                 <div className="absolute inset-0 bg-black opacity-50"></div>
 
-                {/* Content */}
                 <div className="relative container mx-auto px-4 text-center">
                     <h1 className="text-5xl font-bold mb-4 text-white">Member Registration</h1>
                     <p className="text-xl mb-8 text-white">
@@ -76,7 +67,6 @@ const RegisterPage = () => {
                 <div className="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto">
                     <h2 className="text-2xl font-bold mb-6">Registration Form</h2>
                     <form onSubmit={handleSubmit}>
-                        {/* Full Name */}
                         <div className="mb-4">
                             <label className="block text-gray-700">Full Name</label>
                             <input
@@ -90,7 +80,6 @@ const RegisterPage = () => {
                             />
                         </div>
 
-                        {/* Email */}
                         <div className="mb-4">
                             <label className="block text-gray-700">Email</label>
                             <input
@@ -104,7 +93,6 @@ const RegisterPage = () => {
                             />
                         </div>
 
-                        {/* Phone */}
                         <div className="mb-4">
                             <label className="block text-gray-700">Phone</label>
                             <input
@@ -118,7 +106,6 @@ const RegisterPage = () => {
                             />
                         </div>
 
-                        {/* Membership Type */}
                         <div className="mb-4">
                             <label className="block text-gray-700">Membership Type</label>
                             <select
@@ -135,7 +122,6 @@ const RegisterPage = () => {
                             </select>
                         </div>
 
-                        {/* Submit Button */}
                         <div className="text-center">
                             <button
                                 type="submit"

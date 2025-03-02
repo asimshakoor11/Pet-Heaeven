@@ -37,13 +37,11 @@ const AvailablePetsPage = () => {
             <div
                 className="relative section h-screen grid items-center bg-cover bg-center"
                 style={{
-                    backgroundImage: `url('/images/heroimage3.jpg')`, // Replace with your image URL
+                    backgroundImage: `url('/images/heroimage3.jpg')`, 
                 }}
             >
-                {/* Overlay to darken the background image */}
                 <div className="absolute inset-0 bg-black opacity-50"></div>
 
-                {/* Content */}
                 <div className="relative container mx-auto px-4 text-center">
                     <h1 className="text-5xl font-bold mb-4 text-white">Available Pets</h1>
                     <p className="text-xl mb-8 text-white">
@@ -57,7 +55,6 @@ const AvailablePetsPage = () => {
                 <div className="bg-white p-6 rounded-lg shadow-lg">
                     <h2 className="text-2xl font-bold mb-4">Filter Pets</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                        {/* Breed Filter */}
                         <div>
                             <label className="block text-gray-700">Breed</label>
                             <input
@@ -70,7 +67,6 @@ const AvailablePetsPage = () => {
                             />
                         </div>
 
-                        {/* Size Filter */}
                         <div>
                             <label className="block text-gray-700">Size</label>
                             <select
@@ -86,7 +82,6 @@ const AvailablePetsPage = () => {
                             </select>
                         </div>
 
-                        {/* Age Filter */}
                         <div>
                             <label className="block text-gray-700">Age</label>
                             <select
@@ -125,7 +120,7 @@ const AvailablePetsPage = () => {
                                 <p className="text-gray-700"><strong>Health:</strong> {pet.healthCondition}</p>
                                 <p className="text-gray-700"><strong>Status:</strong> {pet.adoptionStatus}</p>
                                 <Link
-                                    to={`/Adopt`} // Link to a dedicated adoption page for the pet
+                                    to={`/Adopt`} 
                                     className="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
                                 >
                                     Adopt Now

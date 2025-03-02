@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const ReleasePage = () => {
-    // State for form fields
     const [formData, setFormData] = useState({
         petName: '',
         petBreed: '',
@@ -13,7 +12,6 @@ const ReleasePage = () => {
         ownerPhone: '',
     });
 
-    // Handle form input changes
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -22,30 +20,23 @@ const ReleasePage = () => {
         });
     };
 
-    // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Create a new release request object
         const newRequest = {
-            id: new Date().getTime(), // Unique ID based on timestamp
+            id: new Date().getTime(), 
             ...formData,
-            submissionDate: new Date().toLocaleString(), // Add submission date
+            submissionDate: new Date().toLocaleString(),
         };
 
-        // Get existing release requests from localStorage
         const existingRequests = JSON.parse(localStorage.getItem('releaseRequests')) || [];
 
-        // Add the new request to the array
         const updatedRequests = [...existingRequests, newRequest];
 
-        // Save the updated array back to localStorage
         localStorage.setItem('releaseRequests', JSON.stringify(updatedRequests));
 
-        // Show success message
         alert('Thank you! Your pet release request has been submitted.');
 
-        // Reset form
         setFormData({
             petName: '',
             petBreed: '',
@@ -60,17 +51,14 @@ const ReleasePage = () => {
 
     return (
         <div className="min-h-screen bg-gray-100">
-            {/* Hero Section */}
             <div
                 className="relative section h-screen grid items-center bg-cover bg-center"
                 style={{
-                    backgroundImage: `url('/images/heroimage5.jpg')`, // Replace with your image URL
+                    backgroundImage: `url('/images/heroimage5.jpg')`, 
                 }}
             >
-                {/* Overlay to darken the background image */}
                 <div className="absolute inset-0 bg-black opacity-50"></div>
 
-                {/* Content */}
                 <div className="relative container mx-auto px-4 text-center">
                     <h1 className="text-5xl font-bold mb-4 text-white">Release a Pet</h1>
                     <p className="text-xl mb-8 text-white">
@@ -84,7 +72,6 @@ const ReleasePage = () => {
                 <div className="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto">
                     <h2 className="text-2xl font-bold mb-6">Pet Release Form</h2>
                     <form onSubmit={handleSubmit}>
-                        {/* Pet Name */}
                         <div className="mb-4">
                             <label className="block text-gray-700">Pet Name</label>
                             <input
@@ -98,7 +85,6 @@ const ReleasePage = () => {
                             />
                         </div>
 
-                        {/* Pet Breed */}
                         <div className="mb-4">
                             <label className="block text-gray-700">Pet Breed</label>
                             <input
@@ -112,7 +98,6 @@ const ReleasePage = () => {
                             />
                         </div>
 
-                        {/* Pet Age */}
                         <div className="mb-4">
                             <label className="block text-gray-700">Pet Age</label>
                             <input
@@ -126,7 +111,6 @@ const ReleasePage = () => {
                             />
                         </div>
 
-                        {/* Pet Size */}
                         <div className="mb-4">
                             <label className="block text-gray-700">Pet Size</label>
                             <select
@@ -143,7 +127,6 @@ const ReleasePage = () => {
                             </select>
                         </div>
 
-                        {/* Reason for Release */}
                         <div className="mb-4">
                             <label className="block text-gray-700">Reason for Release</label>
                             <textarea
@@ -157,7 +140,6 @@ const ReleasePage = () => {
                             ></textarea>
                         </div>
 
-                        {/* Owner's Name */}
                         <div className="mb-4">
                             <label className="block text-gray-700">Your Name</label>
                             <input
@@ -171,7 +153,6 @@ const ReleasePage = () => {
                             />
                         </div>
 
-                        {/* Owner's Email */}
                         <div className="mb-4">
                             <label className="block text-gray-700">Your Email</label>
                             <input
@@ -185,7 +166,6 @@ const ReleasePage = () => {
                             />
                         </div>
 
-                        {/* Owner's Phone */}
                         <div className="mb-4">
                             <label className="block text-gray-700">Your Phone</label>
                             <input
@@ -199,7 +179,6 @@ const ReleasePage = () => {
                             />
                         </div>
 
-                        {/* Submit Button */}
                         <div className="text-center">
                             <button
                                 type="submit"

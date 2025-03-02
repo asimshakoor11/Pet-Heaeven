@@ -1,33 +1,24 @@
 import React, { useState, useEffect } from 'react';
 
 const AdminDashboard = () => {
-    // State for adoption requests
     const [adoptionRequests, setAdoptionRequests] = useState([]);
 
-    // State for release requests
     const [releaseRequests, setReleaseRequests] = useState([]);
 
-    // State for pet listings
     const [pets, setPets] = useState([]);
 
-    // State for members
     const [members, setMembers] = useState([]);
 
-    // Fetch data from localStorage on component mount
     useEffect(() => {
-        // Fetch adoption requests
         const storedAdoptionRequests = JSON.parse(localStorage.getItem('adoptionRequests')) || [];
         setAdoptionRequests(storedAdoptionRequests);
 
-        // Fetch release requests
         const storedReleaseRequests = JSON.parse(localStorage.getItem('releaseRequests')) || [];
         setReleaseRequests(storedReleaseRequests);
 
-        // Fetch pet listings
         const storedPets = JSON.parse(localStorage.getItem('pets')) || [];
         setPets(storedPets);
 
-        // Fetch members
         const storedMembers = JSON.parse(localStorage.getItem('registrations')) || [];
         setMembers(storedMembers);
     }, []);
@@ -48,13 +39,6 @@ const AdminDashboard = () => {
         );
         setReleaseRequests(updatedRequests);
         localStorage.setItem('releaseRequests', JSON.stringify(updatedRequests));
-    };
-
-    // Handle deleting a pet
-    const handleDeletePet = (id) => {
-        const updatedPets = pets.filter((pet) => pet.id !== id);
-        setPets(updatedPets);
-        localStorage.setItem('pets', JSON.stringify(updatedPets));
     };
 
     // Handle deleting a member
